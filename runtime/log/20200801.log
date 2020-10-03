@@ -1,0 +1,66 @@
+---------------------------------------------------------------
+[ 2020-08-01T10:20:30+08:00 ] 127.0.0.1 GET youzan.github.io/
+[运行时间：0.269094s] [吞吐率：3.72req/s] [内存消耗：3,370.44kb] [文件加载：63]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.126931s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'youzan.github.io',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000766s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /Users/ouryou/Documents/project/PHP/admin/application/index/controller/Index.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000916s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025787s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.040835s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.002207s ]
+---------------------------------------------------------------
+[ 2020-08-01T10:20:33+08:00 ] 127.0.0.1 GET youzan.github.io/
+[运行时间：0.069363s] [吞吐率：14.42req/s] [内存消耗：3,292.63kb] [文件加载：63]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.029414s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'youzan.github.io',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000222s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /Users/ouryou/Documents/project/PHP/admin/application/index/controller/Index.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000195s ]
+[ info ] [ LOG ] INIT File

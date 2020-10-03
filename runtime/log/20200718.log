@@ -1,0 +1,1708 @@
+---------------------------------------------------------------
+[ 2020-07-18T08:18:55+08:00 ] 127.0.0.1 POST ling.io/api/v1/token/app
+[运行时间：0.181539s] [吞吐率：5.51req/s] [内存消耗：3,531.61kb] [文件加载：78]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.040714s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Token',
+    2 => 'getAppToken',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8091',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/token/app' => '',
+  'username' => 'admin',
+  'password' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000276s ]
+[ info ] [ RUN ] app\api\controller\v1\Token->getAppToken[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Token.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000743s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001021s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.004400s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.001114s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.003321s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `username` = 'admin'  AND `password` = '14e1b600b1fd579f47433b88e8d85291' LIMIT 1 [ RunTime:0.000918s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_action_log` [ RunTime:0.001896s ]
+[ sql ] [ SQL ] INSERT INTO `ky_action_log` (`member_id` , `username` , `ip` , `url` , `status` , `name` , `describe` , `create_time` , `logtype` , `oid`) VALUES (1 , 'admin' , '127.0.0.1' , '/api/v1/token/app' , 1 , '登录' , '登录成功' , 1595031535 , 1 , 0) [ RunTime:0.033127s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:18:55+08:00 ] 127.0.0.1 GET ling.io/api/v1/manager/info?token=fe71f9f8132f433a01e9949fb88e73da
+[运行时间：0.106671s] [吞吐率：9.37req/s] [内存消耗：3,770.41kb] [文件加载：80]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.021888s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Manager',
+    2 => 'managerInfo',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/manager/info' => '',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000255s ]
+[ info ] [ RUN ] app\api\controller\v1\Manager->managerInfo[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Manager.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000200s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000983s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001608s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001137s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001235s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001101s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001107s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000964s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.001016s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001050s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001135s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000908s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000993s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:18:56+08:00 ] 127.0.0.1 GET ling.io/api/v1/cemetery/tong_ji_xiao_by_qu
+[运行时间：0.116406s] [吞吐率：8.59req/s] [内存消耗：3,894.93kb] [文件加载：85]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.021958s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Cemetery',
+    2 => 'tongJiXiaoByQu',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/cemetery/tong_ji_xiao_by_qu' => '',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000383s ]
+[ info ] [ RUN ] app\api\controller\v1\Cemetery->tongJiXiaoByQu[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Cemetery.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000270s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000971s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001593s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001175s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001939s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000974s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001963s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001337s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.001422s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.001399s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000972s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000914s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001055s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001029s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_cemetery` [ RunTime:0.001908s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ky_cemetery` LIMIT 1 [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ky_cemetery` WHERE  `usestatus` = 1 LIMIT 1 [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ky_cemetery` WHERE  `usestatus` = 3 LIMIT 1 [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ky_cemetery` WHERE  `usestatus` = 2 LIMIT 1 [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ky_cemetery` WHERE  `usestatus` = 4 LIMIT 1 [ RunTime:0.000748s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:18:56+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyDays
+[运行时间：0.132625s] [吞吐率：7.54req/s] [内存消耗：3,924.02kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.023318s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'orderDateStat',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyDays' => '',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000295s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->orderDateStat[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000261s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000866s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001704s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001150s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001275s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001735s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001322s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.001259s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.001268s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001082s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001108s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001475s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%d') as days FROM `ky_order` a
+left join ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND FROM_UNIXTIME(a.paytime,'%Y-%m')='2020-07' GROUP BY FROM_UNIXTIME(a.paytime, '%Y-%m-%d') [ RunTime:0.002234s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:28:57+08:00 ] 127.0.0.1 GET ling.io/api/v1/cemetery_classify/classifyList
+[运行时间：0.146985s] [吞吐率：6.80req/s] [内存消耗：3,842.21kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.034776s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.CemeteryClassify',
+    2 => 'cemeteryClassifyList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/cemetery_classify/classifyList' => '',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000225s ]
+[ info ] [ RUN ] app\api\controller\v1\CemeteryClassify->cemeteryClassifyList[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/CemeteryClassify.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000215s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001984s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001748s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001935s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001856s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001686s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.002330s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.002067s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.001143s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001121s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001017s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000983s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001177s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_cemetery_classify` [ RunTime:0.002085s ]
+[ sql ] [ SQL ] SELECT `id`,`parent_id`,`vno`,`type_name`,`sort`,`image_url`,`status`,`create_time`,`update_time` FROM `ky_cemetery_classify` WHERE  `status` <> -1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.001173s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:28:57+08:00 ] 127.0.0.1 GET ling.io/api/v1/cemetery/tralist?page=1&limit=24&q_id=3&keyword=&sort=add_time&order=desc
+[运行时间：0.148089s] [吞吐率：6.75req/s] [内存消耗：3,915.88kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.034903s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Cemetery',
+    2 => 'cemeteryTraList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/cemetery/tralist' => '',
+  'page' => '1',
+  'limit' => '24',
+  'q_id' => '3',
+  'keyword' => '',
+  'sort' => 'add_time',
+  'order' => 'desc',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000219s ]
+[ info ] [ RUN ] app\api\controller\v1\Cemetery->cemeteryTraList[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Cemetery.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000641s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001838s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.001153s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.002431s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001464s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.002368s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001887s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.001033s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001414s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.003337s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000999s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_cemetery` [ RunTime:0.001507s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `ky_cemetery` `a` LEFT JOIN `ky_cemetery_classify` `b` ON `b`.`id`=`a`.`classify_id` LEFT JOIN `ky_cemetery_type` `c` ON `c`.`id`=`a`.`type_id` LEFT JOIN `ky_cemetery_style` `d` ON `d`.`id`=`a`.`style_id` LEFT JOIN `ky_cemetery_classify` `e` ON `e`.`id`=`a`.`garden_id` LEFT JOIN `ky_cemetery_auxiliary` `f` ON `f`.`cid`=a.id AND f.status=1 WHERE  `a`.`classify_id` = '3'  AND `a`.`status` <> -1 ORDER BY `a`.`ix`,`a`.`iy`,`a`.`id` ASC [ RunTime:0.003841s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:28:57+08:00 ] 127.0.0.1 GET ling.io/api/v1/cemetery/list?page=1&limit=24&q_id=3&keyword=&sort=add_time&order=desc
+[运行时间：0.160435s] [吞吐率：6.23req/s] [内存消耗：4,070.59kb] [文件加载：88]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.034417s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Cemetery',
+    2 => 'cemeteryList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/cemetery/list' => '',
+  'page' => '1',
+  'limit' => '24',
+  'q_id' => '3',
+  'keyword' => '',
+  'sort' => 'add_time',
+  'order' => 'desc',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000266s ]
+[ info ] [ RUN ] app\api\controller\v1\Cemetery->cemeteryList[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Cemetery.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000271s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.002492s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.001044s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001543s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001597s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001655s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001689s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001400s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.002608s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.001687s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001005s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000895s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001115s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_cemetery` [ RunTime:0.001819s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ky_cemetery` `a` LEFT JOIN `ky_cemetery_classify` `b` ON `b`.`id`=`a`.`classify_id` LEFT JOIN `ky_cemetery_type` `c` ON `c`.`id`=`a`.`type_id` LEFT JOIN `ky_cemetery_style` `d` ON `d`.`id`=`a`.`style_id` LEFT JOIN `ky_cemetery_classify` `e` ON `e`.`id`=`a`.`garden_id` LEFT JOIN `ky_cemetery_auxiliary` `f` ON `f`.`cid`=a.id AND f.status=1 WHERE  `a`.`classify_id` = '3'  AND `a`.`status` <> -1 LIMIT 1 [ RunTime:0.003474s ]
+[ sql ] [ SQL ] SELECT `a`.*,b.type_name classifyname,c.type_name typename,d.type_name stylename,e.type_name gardenname,`f`.`bury_name` FROM `ky_cemetery` `a` LEFT JOIN `ky_cemetery_classify` `b` ON `b`.`id`=`a`.`classify_id` LEFT JOIN `ky_cemetery_type` `c` ON `c`.`id`=`a`.`type_id` LEFT JOIN `ky_cemetery_style` `d` ON `d`.`id`=`a`.`style_id` LEFT JOIN `ky_cemetery_classify` `e` ON `e`.`id`=`a`.`garden_id` LEFT JOIN `ky_cemetery_auxiliary` `f` ON `f`.`cid`=a.id AND f.status=1 WHERE  `a`.`classify_id` = '3'  AND `a`.`status` <> -1 ORDER BY `a`.`garden_id`,`b`.`sort`,`a`.`ix`,`a`.`iy`,`a`.`id` ASC LIMIT 0,24 [ RunTime:0.002595s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:28:57+08:00 ] 127.0.0.1 GET ling.io/api/v1/cemetery/tong_ji_xiao_by_qu?page=1&limit=24&q_id=3&keyword=&sort=add_time&order=desc
+[运行时间：0.160017s] [吞吐率：6.25req/s] [内存消耗：3,904.54kb] [文件加载：85]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.035648s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Cemetery',
+    2 => 'tongJiXiaoByQu',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/cemetery/tong_ji_xiao_by_qu' => '',
+  'page' => '1',
+  'limit' => '24',
+  'q_id' => '3',
+  'keyword' => '',
+  'sort' => 'add_time',
+  'order' => 'desc',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000211s ]
+[ info ] [ RUN ] app\api\controller\v1\Cemetery->tongJiXiaoByQu[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Cemetery.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000354s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001343s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001326s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.000942s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001362s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.002049s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001483s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001252s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.001630s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.001079s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001075s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001019s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000887s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_cemetery` [ RunTime:0.002355s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ky_cemetery` WHERE  `classify_id` = 3 LIMIT 1 [ RunTime:0.001952s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ky_cemetery` WHERE  `usestatus` = 1  AND `classify_id` = 3 LIMIT 1 [ RunTime:0.002365s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ky_cemetery` WHERE  `usestatus` = 2  AND `classify_id` = 3 LIMIT 1 [ RunTime:0.001006s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ky_cemetery` WHERE  `usestatus` = 3  AND `classify_id` = 3 LIMIT 1 [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ky_cemetery` WHERE  `usestatus` = 4  AND `classify_id` = 3 LIMIT 1 [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ky_cemetery` WHERE  `usestatus` = 5  AND `classify_id` = 3 LIMIT 1 [ RunTime:0.001015s ]
+[ sql ] [ SQL ] SELECT COUNT(id) AS tp_count FROM `ky_cemetery` WHERE  `usestatus` = 6  AND `classify_id` = 3 LIMIT 1 [ RunTime:0.003403s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:28:59+08:00 ] 127.0.0.1 GET ling.io/api/v1/cemetery/get_cemetery_Info?cid=87
+[运行时间：0.281819s] [吞吐率：3.55req/s] [内存消耗：4,154.31kb] [文件加载：86]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.042621s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Cemetery',
+    2 => 'getCemeteryInfo',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/cemetery/get_cemetery_Info' => '',
+  'cid' => '87',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000258s ]
+[ info ] [ RUN ] app\api\controller\v1\Cemetery->getCemeteryInfo[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Cemetery.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000561s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005934s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.024670s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.006867s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.004846s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.011659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001678s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001888s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.008489s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.001360s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001430s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001756s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001391s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001724s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_cemetery` [ RunTime:0.006612s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,b.type_name gardenname,c.type_name classifyname,d.type_name stylename,e.type_name typename,`a`.`vno`,`a`.`cname`,`a`.`type_id`,`a`.`style_id`,`a`.`usestatus` FROM `ky_cemetery` `a` LEFT JOIN `ky_cemetery_classify` `b` ON `b`.`id`=a.garden_id AND b.status=1 LEFT JOIN `ky_cemetery_classify` `c` ON `c`.`id`=a.classify_id AND c.status=1 LEFT JOIN `ky_cemetery_style` `d` ON `d`.`id`=a.style_id AND d.status=1 LEFT JOIN `ky_cemetery_type` `e` ON `e`.`id`=a.type_id AND e.status=1 LEFT JOIN `ky_cemetery_auxiliary` `f` ON `f`.`cid`=a.id AND f.status=1 WHERE  `a`.`id` = '87'  AND `a`.`status` <> -1 LIMIT 1 [ RunTime:0.002020s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_order` [ RunTime:0.002643s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`sum_price` FROM `ky_order` `a` LEFT JOIN `ky_order_detail` `b` ON `b`.`order_id`=a.id AND b.status=1 LEFT JOIN `ky_cemetery` `c` ON `c`.`id`=`a`.`cid` LEFT JOIN `ky_cemetery_auxiliary` `d` ON `d`.`cid`=`a`.`cid` WHERE  `a`.`cid` = '87'  AND `a`.`financetype` = 1  AND `a`.`status` = 1 LIMIT 1 [ RunTime:0.005227s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`sum_price` FROM `ky_order` `a` LEFT JOIN `ky_order_detail` `b` ON `b`.`order_id`=a.id AND b.status=1 LEFT JOIN `ky_cemetery` `c` ON `c`.`id`=`a`.`cid` LEFT JOIN `ky_cemetery_auxiliary` `d` ON `d`.`cid`=`a`.`cid` WHERE  `a`.`cid` = '87'  AND `a`.`financetype` = 7  AND `a`.`status` = 1 LIMIT 1 [ RunTime:0.002602s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:28:59+08:00 ] 127.0.0.1 GET ling.io/api/v1/cemetery_classify/classifyList
+[运行时间：0.242324s] [吞吐率：4.13req/s] [内存消耗：3,842.21kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.052479s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.CemeteryClassify',
+    2 => 'cemeteryClassifyList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/cemetery_classify/classifyList' => '',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000323s ]
+[ info ] [ RUN ] app\api\controller\v1\CemeteryClassify->cemeteryClassifyList[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/CemeteryClassify.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000358s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008484s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.002129s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001903s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.002616s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001840s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.001946s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.005794s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.004135s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.002910s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.002287s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_cemetery_classify` [ RunTime:0.002213s ]
+[ sql ] [ SQL ] SELECT `id`,`parent_id`,`vno`,`type_name`,`sort`,`image_url`,`status`,`create_time`,`update_time` FROM `ky_cemetery_classify` WHERE  `status` <> -1 ORDER BY `sort` ASC,`id` ASC [ RunTime:0.001337s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:28:59+08:00 ] 127.0.0.1 GET ling.io/api/v1/order/get_buy_cemetery?cid=87
+[运行时间：0.264003s] [吞吐率：3.79req/s] [内存消耗：4,104.72kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.057589s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Order',
+    2 => 'getBuyCemetery',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/order/get_buy_cemetery' => '',
+  'cid' => '87',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000399s ]
+[ info ] [ RUN ] app\api\controller\v1\Order->getBuyCemetery[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Order.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000260s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001082s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001944s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001752s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001479s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001717s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001701s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001871s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.004164s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.003369s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.004356s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001848s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.002848s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_order` [ RunTime:0.002155s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`sell_price`,`b`.`real_price` FROM `ky_order` `a` LEFT JOIN `ky_order_detail` `b` ON `b`.`order_id`=a.id AND b.status=1 LEFT JOIN `ky_cemetery` `c` ON `c`.`id`=`a`.`cid` LEFT JOIN `ky_cemetery_auxiliary` `d` ON `d`.`cid`=`a`.`cid` WHERE  `a`.`cid` = '87'  AND `a`.`financetype` = 2  AND `a`.`status` = 1 LIMIT 1 [ RunTime:0.003630s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:28:59+08:00 ] 127.0.0.1 GET ling.io/api/v1/linkman/list?cid=87
+[运行时间：0.261084s] [吞吐率：3.83req/s] [内存消耗：3,909.76kb] [文件加载：86]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.051902s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Linkman',
+    2 => 'linkmanList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/linkman/list' => '',
+  'cid' => '87',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000370s ]
+[ info ] [ RUN ] app\api\controller\v1\Linkman->linkmanList[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Linkman.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000279s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001328s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001642s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001169s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001326s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000890s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.002887s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001818s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.004624s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.004498s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.003295s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.002811s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001340s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.002262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_linkman` [ RunTime:0.001681s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_linkman` WHERE  `cid` = 87  AND `status` = 1 ORDER BY `id` ASC [ RunTime:0.003946s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_images` [ RunTime:0.003181s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_images` WHERE  `tid` = 24734  AND `cid` = 87  AND `status` = 1  AND `imgtype` = 2 [ RunTime:0.005695s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:28:59+08:00 ] 127.0.0.1 GET ling.io/api/v1/reserve/list?cid=87
+[运行时间：0.267662s] [吞吐率：3.74req/s] [内存消耗：4,187.99kb] [文件加载：88]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.071530s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Order',
+    2 => 'reserveList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/reserve/list' => '',
+  'cid' => '87',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000318s ]
+[ info ] [ RUN ] app\api\controller\v1\Order->reserveList[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Order.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000343s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002597s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.002085s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001024s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001535s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.003008s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001822s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.003112s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.005009s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.004299s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.003369s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001715s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_order` [ RunTime:0.003477s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ky_order` `a` LEFT JOIN `ky_order_detail` `b` ON `b`.`order_id`=a.id AND b.status=1 LEFT JOIN `ky_cemetery` `c` ON `c`.`id`=`a`.`cid` LEFT JOIN `ky_cemetery_auxiliary` `d` ON `d`.`cid`=a.cid AND d.status=1 WHERE  `a`.`cid` = '87'  AND `a`.`financetype` = 1  AND `a`.`order_status` = 2  AND `a`.`status` = 1 LIMIT 1 [ RunTime:0.002961s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`cname`,`c`.`usestatus` FROM `ky_order` `a` LEFT JOIN `ky_order_detail` `b` ON `b`.`order_id`=a.id AND b.status=1 LEFT JOIN `ky_cemetery` `c` ON `c`.`id`=`a`.`cid` LEFT JOIN `ky_cemetery_auxiliary` `d` ON `d`.`cid`=a.cid AND d.status=1 WHERE  `a`.`cid` = '87'  AND `a`.`financetype` = 1  AND `a`.`order_status` = 2  AND `a`.`status` = 1 ORDER BY `a`.`order_begin` ASC LIMIT 0,10 [ RunTime:0.006686s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:28:59+08:00 ] 127.0.0.1 GET ling.io/api/v1/bury/list?cid=87
+[运行时间：0.305746s] [吞吐率：3.27req/s] [内存消耗：3,934.80kb] [文件加载：86]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.064465s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Bury',
+    2 => 'buryList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/bury/list' => '',
+  'cid' => '87',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000431s ]
+[ info ] [ RUN ] app\api\controller\v1\Bury->buryList[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Bury.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000568s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002161s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.003888s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.005443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.003593s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002805s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001907s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.002707s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.001414s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.002672s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001263s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001770s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.005545s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.007706s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_bury` [ RunTime:0.009883s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_bury` WHERE  `cid` = 87  AND `status` = 1 ORDER BY `id` ASC [ RunTime:0.003333s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_images` [ RunTime:0.006696s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_images` WHERE  `tid` = 27448  AND `cid` = 87  AND `status` = 1  AND `imgtype` = 1 [ RunTime:0.004684s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_images` WHERE  `tid` = 27449  AND `cid` = 87  AND `status` = 1  AND `imgtype` = 1 [ RunTime:0.002569s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:28:59+08:00 ] 127.0.0.1 GET ling.io/api/v1/cemetery_style/all
+[运行时间：0.228857s] [吞吐率：4.37req/s] [内存消耗：3,827.45kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.049716s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.CemeteryStyle',
+    2 => 'getCemeteryStyles',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/cemetery_style/all' => '',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000449s ]
+[ info ] [ RUN ] app\api\controller\v1\CemeteryStyle->getCemeteryStyles[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/CemeteryStyle.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000782s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001837s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.002366s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001829s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001119s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.002695s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.007547s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.002614s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.003371s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.002584s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.002977s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001600s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.003780s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_cemetery_style` [ RunTime:0.003986s ]
+[ sql ] [ SQL ] SELECT `id`,`type_name`,`price`,`texture`,`colour`,`area`,`vcdesc`,`status`,`create_time`,`update_time` FROM `ky_cemetery_style` WHERE  `status` <> -1 ORDER BY `id` DESC [ RunTime:0.001056s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:28:59+08:00 ] 127.0.0.1 GET ling.io/api/v1/cemetery/record?cid=87
+[运行时间：0.219335s] [吞吐率：4.56req/s] [内存消耗：3,863.93kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.056015s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Cemetery',
+    2 => 'cemeteryRecord',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/cemetery/record' => '',
+  'cid' => '87',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000351s ]
+[ info ] [ RUN ] app\api\controller\v1\Cemetery->cemeteryRecord[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Cemetery.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000284s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001076s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.002676s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002844s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.003622s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001823s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001947s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.002008s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.001403s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.002046s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001509s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001752s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001214s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_images` [ RunTime:0.002528s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_images` WHERE  `cid` = 87  AND `status` = 1 ORDER BY `id` ASC [ RunTime:0.001632s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:28:59+08:00 ] 127.0.0.1 GET ling.io/api/v1/cemetery_type/list
+[运行时间：0.231934s] [吞吐率：4.31req/s] [内存消耗：3,967.91kb] [文件加载：88]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.070235s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.CemeteryType',
+    2 => 'cemeteryTypeList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/cemetery_type/list' => '',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000270s ]
+[ info ] [ RUN ] app\api\controller\v1\CemeteryType->cemeteryTypeList[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/CemeteryType.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000239s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001325s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.003068s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.003571s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001449s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.002968s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.001818s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001092s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.002498s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001291s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001116s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_cemetery_type` [ RunTime:0.002538s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ky_cemetery_type` WHERE  `status` <> -1 LIMIT 1 [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT `id`,`type_name`,`hrm`,`status`,`create_time`,`update_time` FROM `ky_cemetery_type` WHERE  `status` <> -1 ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001203s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:28:59+08:00 ] 127.0.0.1 GET ling.io/api/v1/reserve/list?cid=87
+[运行时间：0.249064s] [吞吐率：4.02req/s] [内存消耗：4,187.99kb] [文件加载：88]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.052746s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Order',
+    2 => 'reserveList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/reserve/list' => '',
+  'cid' => '87',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000274s ]
+[ info ] [ RUN ] app\api\controller\v1\Order->reserveList[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Order.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000253s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001243s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001715s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004911s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.002715s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.002890s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.003097s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.001442s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.002102s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.002210s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001278s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001174s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001086s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_order` [ RunTime:0.003204s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ky_order` `a` LEFT JOIN `ky_order_detail` `b` ON `b`.`order_id`=a.id AND b.status=1 LEFT JOIN `ky_cemetery` `c` ON `c`.`id`=`a`.`cid` LEFT JOIN `ky_cemetery_auxiliary` `d` ON `d`.`cid`=a.cid AND d.status=1 WHERE  `a`.`cid` = '87'  AND `a`.`financetype` = 1  AND `a`.`order_status` = 2  AND `a`.`status` = 1 LIMIT 1 [ RunTime:0.004112s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`cname`,`c`.`usestatus` FROM `ky_order` `a` LEFT JOIN `ky_order_detail` `b` ON `b`.`order_id`=a.id AND b.status=1 LEFT JOIN `ky_cemetery` `c` ON `c`.`id`=`a`.`cid` LEFT JOIN `ky_cemetery_auxiliary` `d` ON `d`.`cid`=a.cid AND d.status=1 WHERE  `a`.`cid` = '87'  AND `a`.`financetype` = 1  AND `a`.`order_status` = 2  AND `a`.`status` = 1 ORDER BY `a`.`order_begin` ASC LIMIT 0,10 [ RunTime:0.002705s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:29:00+08:00 ] 127.0.0.1 GET ling.io/api/v1/order/get_services_order_list?cid=87
+[运行时间：0.104801s] [吞吐率：9.54req/s] [内存消耗：4,038.60kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.021758s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Order',
+    2 => 'getServicesOrderList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/order/get_services_order_list' => '',
+  'cid' => '87',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000325s ]
+[ info ] [ RUN ] app\api\controller\v1\Order->getServicesOrderList[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Order.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000184s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000945s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001901s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001871s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001273s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001196s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001531s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.001105s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.001098s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001515s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001311s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001325s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001066s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_order` [ RunTime:0.001343s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `ky_order` `a` LEFT JOIN `ky_order_detail` `b` ON `b`.`order_id`=a.id AND b.status=1 LEFT JOIN `ky_cemetery` `c` ON `c`.`id`=`a`.`cid` LEFT JOIN `ky_cemetery_auxiliary` `d` ON `d`.`cid`=a.cid AND d.status=1 WHERE  `a`.`cid` = '87'  AND `a`.`financetype` = 3  AND `a`.`status` = 1 GROUP BY `a`.`id` ORDER BY `a`.`order_begin` DESC [ RunTime:0.001732s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:29:01+08:00 ] 127.0.0.1 GET ling.io/api/v1/linkman/list?cid=87
+[运行时间：0.117483s] [吞吐率：8.51req/s] [内存消耗：3,915.56kb] [文件加载：86]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.027619s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Linkman',
+    2 => 'linkmanList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/linkman/list' => '',
+  'cid' => '87',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000214s ]
+[ info ] [ RUN ] app\api\controller\v1\Linkman->linkmanList[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Linkman.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000373s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000803s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001373s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.001024s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001760s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000983s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001249s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001521s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001073s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000988s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000899s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000902s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001084s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001220s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_linkman` [ RunTime:0.001823s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_linkman` WHERE  `cid` = 87  AND `status` = 1 ORDER BY `id` ASC [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_images` [ RunTime:0.001263s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_images` WHERE  `tid` = 24734  AND `cid` = 87  AND `status` = 1  AND `imgtype` = 2 [ RunTime:0.001572s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:29:01+08:00 ] 127.0.0.1 GET ling.io/api/v1/bury/list?cid=87
+[运行时间：0.117609s] [吞吐率：8.50req/s] [内存消耗：3,941.10kb] [文件加载：86]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.027167s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Bury',
+    2 => 'buryList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/bury/list' => '',
+  'cid' => '87',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000199s ]
+[ info ] [ RUN ] app\api\controller\v1\Bury->buryList[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Bury.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000298s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001086s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001520s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.001227s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.002214s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001348s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001514s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001441s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.001257s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001339s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000841s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_bury` [ RunTime:0.001735s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_bury` WHERE  `cid` = 87  AND `status` = 1 ORDER BY `id` ASC [ RunTime:0.001312s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_images` [ RunTime:0.001321s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_images` WHERE  `tid` = 27448  AND `cid` = 87  AND `status` = 1  AND `imgtype` = 1 [ RunTime:0.001155s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_images` WHERE  `tid` = 27449  AND `cid` = 87  AND `status` = 1  AND `imgtype` = 1 [ RunTime:0.001278s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:29:01+08:00 ] 127.0.0.1 GET ling.io/api/v1/order/get_buy_cemetery?cid=87
+[运行时间：0.123898s] [吞吐率：8.07req/s] [内存消耗：4,112.27kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.029790s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Order',
+    2 => 'getBuyCemetery',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/order/get_buy_cemetery' => '',
+  'cid' => '87',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000299s ]
+[ info ] [ RUN ] app\api\controller\v1\Order->getBuyCemetery[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Order.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000563s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000869s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001535s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.000883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001452s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001111s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001153s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001534s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000944s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.001298s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001088s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001620s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001412s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_order` [ RunTime:0.001559s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`sell_price`,`b`.`real_price` FROM `ky_order` `a` LEFT JOIN `ky_order_detail` `b` ON `b`.`order_id`=a.id AND b.status=1 LEFT JOIN `ky_cemetery` `c` ON `c`.`id`=`a`.`cid` LEFT JOIN `ky_cemetery_auxiliary` `d` ON `d`.`cid`=`a`.`cid` WHERE  `a`.`cid` = '87'  AND `a`.`financetype` = 2  AND `a`.`status` = 1 LIMIT 1 [ RunTime:0.003253s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:41:36+08:00 ] 127.0.0.1 GET ling.io/api/v1/order/get_services_order_list?cid=87
+[运行时间：0.109844s] [吞吐率：9.10req/s] [内存消耗：4,110.16kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.026072s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Order',
+    2 => 'getServicesOrderList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/order/get_services_order_list' => '',
+  'cid' => '87',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000308s ]
+[ info ] [ RUN ] app\api\controller\v1\Order->getServicesOrderList[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Order.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000426s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001029s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001819s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.001021s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001466s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000779s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001321s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001496s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001361s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000994s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000929s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000965s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_order` [ RunTime:0.002550s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `ky_order` `a` LEFT JOIN `ky_order_detail` `b` ON `b`.`order_id`=a.id AND b.status=1 LEFT JOIN `ky_cemetery` `c` ON `c`.`id`=`a`.`cid` LEFT JOIN `ky_cemetery_auxiliary` `d` ON `d`.`cid`=a.cid AND d.status=1 WHERE  `a`.`cid` = '87'  AND `a`.`financetype` = 3  AND `a`.`status` = 1 GROUP BY `a`.`id` ORDER BY `a`.`order_begin` DESC [ RunTime:0.001737s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:41:37+08:00 ] 127.0.0.1 POST ling.io/api/v1/historyinfo/get_historyinfo
+[运行时间：0.104071s] [吞吐率：9.61req/s] [内存消耗：3,839.91kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.022924s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.HistoryInfo',
+    2 => 'getHistoryInfoByCid',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8091',
+  'content-type' => 'application/json;charset=UTF-8',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '21',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/historyinfo/get_historyinfo' => '',
+  'cid' => '87',
+  'typeid' => '1',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000228s ]
+[ info ] [ RUN ] app\api\controller\v1\HistoryInfo->getHistoryInfoByCid[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/HistoryInfo.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000221s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000967s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001639s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001104s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001121s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001357s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001759s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000822s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001004s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_history_info` [ RunTime:0.001841s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`buyer_name`,`b`.`sellname`,b.sum_price as real_price,`b`.`order_status` FROM `ky_history_info` `a` LEFT JOIN `ky_order` `b` ON `b`.`id`=a.order_id AND b.status=1 AND b.financetype=4 WHERE  `a`.`old_cid` = '87'  AND `a`.`typeid` = '1'  AND `a`.`status` = 1 ORDER BY `a`.`id` ASC [ RunTime:0.001520s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:41:37+08:00 ] 127.0.0.1 GET ling.io/api/v1/linkman/list?cid=87
+[运行时间：0.105424s] [吞吐率：9.49req/s] [内存消耗：3,909.76kb] [文件加载：86]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.023342s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Linkman',
+    2 => 'linkmanList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/linkman/list' => '',
+  'cid' => '87',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000373s ]
+[ info ] [ RUN ] app\api\controller\v1\Linkman->linkmanList[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Linkman.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000197s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001074s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001691s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001144s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001242s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000759s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001157s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001277s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.001175s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000905s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001083s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001078s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_linkman` [ RunTime:0.001412s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_linkman` WHERE  `cid` = 87  AND `status` = 1 ORDER BY `id` ASC [ RunTime:0.001046s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_images` [ RunTime:0.001754s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_images` WHERE  `tid` = 24734  AND `cid` = 87  AND `status` = 1  AND `imgtype` = 2 [ RunTime:0.001491s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:41:40+08:00 ] 127.0.0.1 GET ling.io/api/v1/order/get_services_order_list?cid=87
+[运行时间：0.111416s] [吞吐率：8.98req/s] [内存消耗：4,110.16kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.027676s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Order',
+    2 => 'getServicesOrderList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/order/get_services_order_list' => '',
+  'cid' => '87',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000349s ]
+[ info ] [ RUN ] app\api\controller\v1\Order->getServicesOrderList[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Order.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000196s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000891s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001635s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001656s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001217s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001266s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001316s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.000971s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000854s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001330s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001280s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001172s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001124s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_order` [ RunTime:0.001356s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `ky_order` `a` LEFT JOIN `ky_order_detail` `b` ON `b`.`order_id`=a.id AND b.status=1 LEFT JOIN `ky_cemetery` `c` ON `c`.`id`=`a`.`cid` LEFT JOIN `ky_cemetery_auxiliary` `d` ON `d`.`cid`=a.cid AND d.status=1 WHERE  `a`.`cid` = '87'  AND `a`.`financetype` = 3  AND `a`.`status` = 1 GROUP BY `a`.`id` ORDER BY `a`.`order_begin` DESC [ RunTime:0.001491s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:41:42+08:00 ] 127.0.0.1 GET ling.io/api/v1/service_info/get_services_all?type=2
+[运行时间：0.135120s] [吞吐率：7.40req/s] [内存消耗：3,892.03kb] [文件加载：86]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.026792s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.ServiceInfo',
+    2 => 'getServicesAll',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/service_info/get_services_all' => '',
+  'type' => '2',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000304s ]
+[ info ] [ RUN ] app\api\controller\v1\ServiceInfo->getServicesAll[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/ServiceInfo.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000445s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000963s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001983s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001786s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.003077s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001617s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.001509s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.001017s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001163s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.002479s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001321s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001211s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_service_info` [ RunTime:0.002989s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_service_info` WHERE  `status` = 1 ORDER BY `id` ASC [ RunTime:0.001027s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_combo` [ RunTime:0.001819s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_combo` WHERE  `status` = 1 ORDER BY `id` ASC [ RunTime:0.001272s ]
+---------------------------------------------------------------
+[ 2020-07-18T08:41:43+08:00 ] 127.0.0.1 GET ling.io/api/v1/linkman/list?cid=87
+[运行时间：0.150024s] [吞吐率：6.67req/s] [内存消耗：3,909.76kb] [文件加载：86]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.043451s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Linkman',
+    2 => 'linkmanList',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=1; token=fe71f9f8132f433a01e9949fb88e73da',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'fe71f9f8132f433a01e9949fb88e73da',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/linkman/list' => '',
+  'cid' => '87',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000436s ]
+[ info ] [ RUN ] app\api\controller\v1\Linkman->linkmanList[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Linkman.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000258s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001130s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001616s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001156s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.002768s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001466s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001647s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.001310s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.001010s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001045s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001445s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001142s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_linkman` [ RunTime:0.001779s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_linkman` WHERE  `cid` = 87  AND `status` = 1 ORDER BY `id` ASC [ RunTime:0.001039s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_images` [ RunTime:0.001989s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_images` WHERE  `tid` = 24734  AND `cid` = 87  AND `status` = 1  AND `imgtype` = 2 [ RunTime:0.001539s ]

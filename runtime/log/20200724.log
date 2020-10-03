@@ -1,0 +1,1803 @@
+---------------------------------------------------------------
+[ 2020-07-24T09:34:10+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyYears?page=1&limit=20&years=2020&financetype=2&search_data=&days=&sort=add_time&order=desc
+[运行时间：0.099845s] [吞吐率：10.02req/s] [内存消耗：3,766.48kb] [文件加载：77]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.033495s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderYears',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; token=a63bf244602e6b381d3b22f65978f7ef; sidebarStatus=0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'a63bf244602e6b381d3b22f65978f7ef',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyYears' => '',
+  'page' => '1',
+  'limit' => '20',
+  'years' => '2020',
+  'financetype' => '2',
+  'search_data' => '',
+  'days' => '',
+  'sort' => 'add_time',
+  'order' => 'desc',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.001246s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001084s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.002573s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.001155s ]
+[ error ] [0]无法获取的Token变量[/Users/ouryou/Documents/project/PHP/admin/application/api/service/Token.php:26]
+---------------------------------------------------------------
+[ 2020-07-24T09:34:10+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyClassify?page=1&limit=20&years=2020&financetype=2&search_data=&days=&sort=add_time&order=desc
+[运行时间：0.099954s] [吞吐率：10.00req/s] [内存消耗：3,686.94kb] [文件加载：77]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.024835s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderClassify',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; token=a63bf244602e6b381d3b22f65978f7ef; sidebarStatus=0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'a63bf244602e6b381d3b22f65978f7ef',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyClassify' => '',
+  'page' => '1',
+  'limit' => '20',
+  'years' => '2020',
+  'financetype' => '2',
+  'search_data' => '',
+  'days' => '',
+  'sort' => 'add_time',
+  'order' => 'desc',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.001131s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]无法获取的Token变量[/Users/ouryou/Documents/project/PHP/admin/application/api/service/Token.php:26]
+---------------------------------------------------------------
+[ 2020-07-24T09:34:10+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyPrice?page=1&limit=20&years=2020&financetype=2&search_data=&days=&sort=add_time&order=desc
+[运行时间：0.104056s] [吞吐率：9.61req/s] [内存消耗：3,766.50kb] [文件加载：77]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.033686s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderPrice',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; token=a63bf244602e6b381d3b22f65978f7ef; sidebarStatus=0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'a63bf244602e6b381d3b22f65978f7ef',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyPrice' => '',
+  'page' => '1',
+  'limit' => '20',
+  'years' => '2020',
+  'financetype' => '2',
+  'search_data' => '',
+  'days' => '',
+  'sort' => 'add_time',
+  'order' => 'desc',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.001173s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001392s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.002375s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.001298s ]
+[ error ] [0]无法获取的Token变量[/Users/ouryou/Documents/project/PHP/admin/application/api/service/Token.php:26]
+---------------------------------------------------------------
+[ 2020-07-24T09:34:32+08:00 ] 127.0.0.1 GET ling.io/api/v1/manager/info?token=a63bf244602e6b381d3b22f65978f7ef
+[运行时间：0.186997s] [吞吐率：5.35req/s] [内存消耗：3,724.53kb] [文件加载：77]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.037726s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Manager',
+    2 => 'managerInfo',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; token=a63bf244602e6b381d3b22f65978f7ef; sidebarStatus=0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'a63bf244602e6b381d3b22f65978f7ef',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/manager/info' => '',
+  'token' => 'a63bf244602e6b381d3b22f65978f7ef',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000485s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001043s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001863s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.000985s ]
+[ error ] [0]无法获取的Token变量[/Users/ouryou/Documents/project/PHP/admin/application/api/service/Token.php:26]
+---------------------------------------------------------------
+[ 2020-07-24T09:34:42+08:00 ] 127.0.0.1 POST ling.io/api/v1/token/app
+[运行时间：0.107800s] [吞吐率：9.28req/s] [内存消耗：3,532.42kb] [文件加载：78]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.028267s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Token',
+    2 => 'getAppToken',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost:8091',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '40',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/token/app' => '',
+  'username' => 'admin',
+  'password' => '123456',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000214s ]
+[ info ] [ RUN ] app\api\controller\v1\Token->getAppToken[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Token.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000189s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000951s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.002780s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.001165s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.002896s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `username` = 'admin'  AND `password` = '14e1b600b1fd579f47433b88e8d85291' LIMIT 1 [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_action_log` [ RunTime:0.001636s ]
+[ sql ] [ SQL ] INSERT INTO `ky_action_log` (`member_id` , `username` , `ip` , `url` , `status` , `name` , `describe` , `create_time` , `logtype` , `oid`) VALUES (1 , 'admin' , '127.0.0.1' , '/api/v1/token/app' , 1 , '登录' , '登录成功' , 1595554481 , 1 , 0) [ RunTime:0.010297s ]
+---------------------------------------------------------------
+[ 2020-07-24T09:34:42+08:00 ] 127.0.0.1 GET ling.io/api/v1/manager/info?token=e289847be47edcb763f0282f28f47786
+[运行时间：0.088168s] [吞吐率：11.34req/s] [内存消耗：3,771.51kb] [文件加载：80]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.020153s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Manager',
+    2 => 'managerInfo',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/manager/info' => '',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000258s ]
+[ info ] [ RUN ] app\api\controller\v1\Manager->managerInfo[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Manager.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000191s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000903s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001492s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001024s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.003358s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001292s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001192s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001003s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001011s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001025s ]
+---------------------------------------------------------------
+[ 2020-07-24T09:34:43+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyPrice?page=1&limit=20&years=2020&financetype=2&search_data=&days=&sort=add_time&order=desc
+[运行时间：0.365166s] [吞吐率：2.74req/s] [内存消耗：3,928.13kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.092450s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderPrice',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyPrice' => '',
+  'page' => '1',
+  'limit' => '20',
+  'years' => '2020',
+  'financetype' => '2',
+  'search_data' => '',
+  'days' => '',
+  'sort' => 'add_time',
+  'order' => 'desc',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000297s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderPrice[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000272s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001286s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.002085s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.003499s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003141s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.003964s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001855s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.003269s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.001384s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001331s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001586s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.011762s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001851s ]
+[ sql ] [ SQL ] select count(a.id) as number,sum(a.sum_price) as price,a.sum_price from ky_order a 
+left join ky_cemetery b on a.cid = b.id
+left join ky_cemetery_classify c on c.id = b.classify_id
+where a.status!=-1 AND a.financetype=2 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY a.sum_price [ RunTime:0.004401s ]
+---------------------------------------------------------------
+[ 2020-07-24T09:34:43+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyYears?page=1&limit=20&years=2020&financetype=2&search_data=&days=&sort=add_time&order=desc
+[运行时间：0.380238s] [吞吐率：2.63req/s] [内存消耗：3,931.77kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.094710s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderYears',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyYears' => '',
+  'page' => '1',
+  'limit' => '20',
+  'years' => '2020',
+  'financetype' => '2',
+  'search_data' => '',
+  'days' => '',
+  'sort' => 'add_time',
+  'order' => 'desc',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000318s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderYears[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000272s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003062s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.008782s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.022576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.002478s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001861s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.006493s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.001586s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.009869s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001565s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.002271s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.003271s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001480s ]
+[ sql ] [ SQL ] select (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.years from (
+SELECT count(id) as number,sum(sum_price) as price,FROM_UNIXTIME(paytime, '%Y') as years  FROM `ky_order` where status!=-1 AND financetype =2 AND ISNULL(paytime)=0 and LENGTH(trim(paytime))>0 GROUP BY FROM_UNIXTIME(paytime, '%Y')
+) a left join (
+SELECT count(id) as number,sum(sum_price) as price,FROM_UNIXTIME(paytime, '%Y') as years FROM `ky_order` where status!=-1 AND financetype =6 AND ISNULL(paytime)=0 and LENGTH(trim(paytime))>0 GROUP BY FROM_UNIXTIME(paytime, '%Y')
+) b on a.years=b.years order by years asc limit 5 [ RunTime:0.006356s ]
+---------------------------------------------------------------
+[ 2020-07-24T09:34:43+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyClassify?page=1&limit=20&years=2020&financetype=2&search_data=&days=&sort=add_time&order=desc
+[运行时间：0.312583s] [吞吐率：3.20req/s] [内存消耗：3,934.77kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.105034s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderClassify',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyClassify' => '',
+  'page' => '1',
+  'limit' => '20',
+  'years' => '2020',
+  'financetype' => '2',
+  'search_data' => '',
+  'days' => '',
+  'sort' => 'add_time',
+  'order' => 'desc',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000384s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderClassify[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000344s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021130s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.006664s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001570s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001114s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.002300s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001571s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.002822s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.002262s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.005415s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001470s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001160s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001483s ]
+[ sql ] [ SQL ] select (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.classify_id,a.type_name,a.sort from (
+select count(a.id) as number,sum(a.sum_price) as price,b.classify_id,c.type_name,c.sort from ky_order a 
+left join ky_cemetery b on a.cid = b.id
+left join ky_cemetery_classify c on c.id = b.classify_id
+where a.status!=-1 AND a.financetype=2 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY c.id
+) a left join (
+select count(a.id) as number,sum(a.sum_price) as price,b.classify_id,c.type_name,c.sort from ky_order a 
+left join ky_cemetery b on a.cid = b.id
+left join ky_cemetery_classify c on c.id = b.classify_id
+where a.status!=-1 AND a.financetype=6 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY c.id
+) b on a.classify_id=b.classify_id order by sort asc [ RunTime:0.004168s ]
+---------------------------------------------------------------
+[ 2020-07-24T09:34:45+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyMonth?years=2019
+[运行时间：0.092850s] [吞吐率：10.77req/s] [内存消耗：3,936.38kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.023302s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderMonth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyMonth' => '',
+  'years' => '2019',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000273s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderMonth[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000193s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000954s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001607s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.001129s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001448s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001074s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001397s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000992s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.months FROM (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =2 AND FROM_UNIXTIME(a.paytime, '%Y')=2019 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) a left JOIN (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =6 AND FROM_UNIXTIME(a.paytime, '%Y')=2019 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) b on a.months=b.months order by months asc [ RunTime:0.001728s ]
+---------------------------------------------------------------
+[ 2020-07-24T09:35:14+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyMonth?years=2019
+[运行时间：0.093256s] [吞吐率：10.72req/s] [内存消耗：3,936.42kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.023556s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderMonth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyMonth' => '',
+  'years' => '2019',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000247s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderMonth[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000181s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000892s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001369s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.000972s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001459s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001809s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001153s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.000987s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000928s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000888s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000838s ]
+[ sql ] [ SQL ] SELECT (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.months FROM (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =2 AND FROM_UNIXTIME(a.paytime, '%Y')=2019 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) a left JOIN (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =6 AND FROM_UNIXTIME(a.paytime, '%Y')=2019 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) b on a.months=b.months order by months asc [ RunTime:0.001924s ]
+---------------------------------------------------------------
+[ 2020-07-24T09:35:44+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyMonth?years=2019
+[运行时间：0.094302s] [吞吐率：10.60req/s] [内存消耗：3,936.42kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.023669s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderMonth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyMonth' => '',
+  'years' => '2019',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000284s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderMonth[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000219s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000885s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001354s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001369s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001094s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001791s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001152s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000862s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000925s ]
+[ sql ] [ SQL ] SELECT (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.months FROM (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =2 AND FROM_UNIXTIME(a.paytime, '%Y')=2019 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) a left JOIN (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =6 AND FROM_UNIXTIME(a.paytime, '%Y')=2019 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) b on a.months=b.months order by months asc [ RunTime:0.002911s ]
+---------------------------------------------------------------
+[ 2020-07-24T09:36:18+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyMonth?years=2019
+[运行时间：0.092531s] [吞吐率：10.81req/s] [内存消耗：3,936.42kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.023418s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderMonth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyMonth' => '',
+  'years' => '2019',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000203s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderMonth[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000209s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000978s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001421s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.001104s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001385s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001078s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001177s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.001233s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.001175s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000837s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.months FROM (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =2 AND FROM_UNIXTIME(a.paytime, '%Y')=2019 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) a left JOIN (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =6 AND FROM_UNIXTIME(a.paytime, '%Y')=2019 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) b on a.months=b.months order by months asc [ RunTime:0.001931s ]
+---------------------------------------------------------------
+[ 2020-07-24T09:37:50+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyMonth?years=2019
+[运行时间：0.095004s] [吞吐率：10.53req/s] [内存消耗：3,935.55kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.024975s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderMonth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyMonth' => '',
+  'years' => '2019',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000193s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderMonth[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000188s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000990s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001420s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.001605s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001656s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000842s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001109s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001179s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.000925s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000978s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001344s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001119s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SELECT (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.months FROM (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =2 AND FROM_UNIXTIME(a.paytime, '%Y')=2019 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) a left JOIN (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =6 AND FROM_UNIXTIME(a.paytime, '%Y')=2019 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) b on a.months=b.months order by months asc [ RunTime:0.001801s ]
+---------------------------------------------------------------
+[ 2020-07-24T09:41:31+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyMonth?years=2020
+[运行时间：0.096614s] [吞吐率：10.35req/s] [内存消耗：3,936.11kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.024782s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderMonth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyMonth' => '',
+  'years' => '2020',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000673s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderMonth[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000202s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000854s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001353s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.000987s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001404s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001171s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001479s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001127s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000819s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SELECT (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.months FROM (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =2 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) a left JOIN (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =6 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) b on a.months=b.months order by months asc [ RunTime:0.002628s ]
+---------------------------------------------------------------
+[ 2020-07-24T09:42:08+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyMonth?years=2020
+[运行时间：0.094160s] [吞吐率：10.62req/s] [内存消耗：3,936.16kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.025008s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderMonth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyMonth' => '',
+  'years' => '2020',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000225s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderMonth[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000192s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000980s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001744s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.001380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.002078s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000854s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001089s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001088s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000841s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000948s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001005s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.months FROM (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =2 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) a left JOIN (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =6 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) b on a.months=b.months order by months asc [ RunTime:0.002004s ]
+---------------------------------------------------------------
+[ 2020-07-24T09:50:12+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyMonth?years=2020
+[运行时间：0.094282s] [吞吐率：10.61req/s] [内存消耗：3,936.21kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.023649s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderMonth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyMonth' => '',
+  'years' => '2020',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000438s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderMonth[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000263s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000894s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001318s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.000907s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001333s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001133s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001290s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001510s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000934s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.months FROM (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =2 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) a left JOIN (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =6 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) b on a.months=b.months order by months asc [ RunTime:0.002142s ]
+---------------------------------------------------------------
+[ 2020-07-24T09:51:01+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyMonth?years=2020
+[运行时间：0.097496s] [吞吐率：10.26req/s] [内存消耗：4,047.19kb] [文件加载：87]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.024565s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderMonth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyMonth' => '',
+  'years' => '2020',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000197s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderMonth[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000917s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001364s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.001046s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001489s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000991s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001241s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001114s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.000957s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000862s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000960s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001773s ]
+[ sql ] [ SQL ] SELECT (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.months FROM (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =2 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) a left JOIN (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =6 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) b on a.months=b.months order by months asc [ RunTime:0.002023s ]
+[ error ] [8]未定义数组下标: 1[/Users/ouryou/Documents/project/PHP/admin/application/api/logic/Stat.php:297]
+---------------------------------------------------------------
+[ 2020-07-24T09:51:12+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyMonth?years=2020
+[运行时间：0.093356s] [吞吐率：10.71req/s] [内存消耗：3,936.21kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.023458s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderMonth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyMonth' => '',
+  'years' => '2020',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000193s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderMonth[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000187s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001047s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001491s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.001075s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001773s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001145s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001149s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.000965s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000951s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000875s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001076s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.001346s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001152s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SELECT (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.months FROM (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =2 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) a left JOIN (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =6 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) b on a.months=b.months order by months asc [ RunTime:0.002295s ]
+---------------------------------------------------------------
+[ 2020-07-24T09:52:11+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyMonth?years=2020
+[运行时间：0.095925s] [吞吐率：10.42req/s] [内存消耗：3,936.98kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.022679s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderMonth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyMonth' => '',
+  'years' => '2020',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000671s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderMonth[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000190s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000921s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001426s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.000875s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001521s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001357s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001284s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001085s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000819s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.months FROM (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =2 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) a left JOIN (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =6 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) b on a.months=b.months order by months asc [ RunTime:0.002609s ]
+---------------------------------------------------------------
+[ 2020-07-24T10:48:10+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyMonth?years=2020
+[运行时间：0.093174s] [吞吐率：10.73req/s] [内存消耗：3,938.04kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.024970s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderMonth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyMonth' => '',
+  'years' => '2020',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000455s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderMonth[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000291s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001312s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001640s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.000942s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001292s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001116s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001201s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001173s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000968s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000849s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000855s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.months FROM (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =2 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) a left JOIN (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =6 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) b on a.months=b.months order by months asc [ RunTime:0.002129s ]
+---------------------------------------------------------------
+[ 2020-07-24T10:48:23+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyMonth?years=2020
+[运行时间：0.095309s] [吞吐率：10.49req/s] [内存消耗：3,938.04kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.026242s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderMonth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyMonth' => '',
+  'years' => '2020',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000224s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderMonth[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000195s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000959s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001554s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.000931s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001448s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001015s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001011s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.000993s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.001097s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.001050s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.001159s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SELECT (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.months FROM (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =2 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) a left JOIN (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =6 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) b on a.months=b.months order by months asc [ RunTime:0.002089s ]
+---------------------------------------------------------------
+[ 2020-07-24T10:48:36+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyMonth?years=2020
+[运行时间：0.099257s] [吞吐率：10.07req/s] [内存消耗：4,049.02kb] [文件加载：87]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.023016s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderMonth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyMonth' => '',
+  'years' => '2020',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000274s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderMonth[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000888s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001574s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.000960s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001599s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001274s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001014s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001744s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001025s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SELECT (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.months FROM (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =2 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) a left JOIN (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =6 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) b on a.months=b.months order by months asc [ RunTime:0.003054s ]
+[ error ] [8]未定义数组下标: 0[/Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php:131]
+---------------------------------------------------------------
+[ 2020-07-24T10:48:51+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyMonth?years=2020
+[运行时间：0.097370s] [吞吐率：10.27req/s] [内存消耗：3,938.04kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.024247s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderMonth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyMonth' => '',
+  'years' => '2020',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000302s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderMonth[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000203s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001020s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001583s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.000873s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001588s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001264s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001761s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.000983s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000854s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000843s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000875s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000864s ]
+[ sql ] [ SQL ] SELECT (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.months FROM (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =2 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) a left JOIN (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =6 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) b on a.months=b.months order by months asc [ RunTime:0.003681s ]
+---------------------------------------------------------------
+[ 2020-07-24T10:49:35+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyMonth?years=2020
+[运行时间：0.094114s] [吞吐率：10.63req/s] [内存消耗：3,938.04kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.023966s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderMonth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyMonth' => '',
+  'years' => '2020',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000199s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderMonth[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000184s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000902s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001833s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.001267s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001599s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001383s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001245s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001016s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.001077s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.001096s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000964s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001051s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.001025s ]
+[ sql ] [ SQL ] SELECT (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.months FROM (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =2 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) a left JOIN (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =6 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) b on a.months=b.months order by months asc [ RunTime:0.002106s ]
+---------------------------------------------------------------
+[ 2020-07-24T10:49:49+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyMonth?years=2020
+[运行时间：0.093664s] [吞吐率：10.68req/s] [内存消耗：3,938.04kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.023010s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderMonth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyMonth' => '',
+  'years' => '2020',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000215s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderMonth[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000196s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000964s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001556s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.001010s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001600s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001428s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001341s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.000931s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.000934s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SELECT (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.months FROM (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =2 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) a left JOIN (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =6 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) b on a.months=b.months order by months asc [ RunTime:0.002107s ]
+---------------------------------------------------------------
+[ 2020-07-24T10:52:08+08:00 ] 127.0.0.1 GET ling.io/api/v1/stat/buyMonth?years=2020
+[运行时间：0.097283s] [吞吐率：10.28req/s] [内存消耗：3,936.98kb] [文件加载：84]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\InitBase @app_init [ RunTime:0.024611s ]
+[ info ] [ LANG ] /Users/ouryou/Documents/project/PHP/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'v1.Stat',
+    2 => 'buyOrderMonth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'x-forwarded-host' => 'localhost:8091',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-port' => '8091',
+  'x-forwarded-for' => '127.0.0.1',
+  'cookie' => 'UM_distinctid=170cc9ac13a6e6-0a36af9f2ec634-5437971-3d10d-170cc9ac13b444; CNZZDATA1278677730=442393024-1583980510-%7C1583987090; CNZZDATA1278747520=490526748-1585969968-%7C1585969968; CNZZDATA1278738640=2035134511-1585787985-%7C1588052568; CNZZDATA1278738554=1149636672-1593498267-%7C1593498267; CNZZDATA1278721383=660291229-1586083709-%7C1593743388; CNZZDATA1278738654=983019955-1585789180-%7C1594084342; CNZZDATA1278738676=672802802-1585739365-%7C1594189857; _ga=GA1.1.1757840036.1594649106; sidebarStatus=0; token=e289847be47edcb763f0282f28f47786',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8091/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'token' => 'e289847be47edcb763f0282f28f47786',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'ling.io',
+)
+[ info ] [ PARAM ] array (
+  '/api/v1/stat/buyMonth' => '',
+  'years' => '2020',
+  'version' => 'v1',
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppBegin @app_begin [ RunTime:0.000198s ]
+[ info ] [ RUN ] app\api\controller\v1\Stat->buyOrderMonth[ /Users/ouryou/Documents/project/PHP/admin/application/api/controller/v1/Stat.php ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\AppEnd @app_end [ RunTime:0.000210s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001009s ] mysql:host=127.0.0.1;dbname=kygm;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_config` [ RunTime:0.001512s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_config` [ RunTime:0.000916s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_manager` [ RunTime:0.001539s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_manager` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_branch` [ RunTime:0.001228s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_branch` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ky_auth_rule` [ RunTime:0.001298s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `pid` <> 0 [ RunTime:0.001047s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 0 ORDER BY `ordernum` DESC [ RunTime:0.001022s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 1 ORDER BY `ordernum` DESC [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 13 ORDER BY `ordernum` DESC [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 50 ORDER BY `ordernum` DESC [ RunTime:0.000882s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 76 ORDER BY `ordernum` DESC [ RunTime:0.001006s ]
+[ sql ] [ SQL ] SELECT * FROM `ky_auth_rule` WHERE  `status` = 1  AND `ismenu` = 1  AND `pid` = 87 ORDER BY `ordernum` DESC [ RunTime:0.000882s ]
+[ sql ] [ SQL ] SELECT (IFNULL(a.number,0)-IFNULL(b.number,0)) as buy_number,(IFNULL(a.price,0)-IFNULL(b.price,0)) as buy_price,a.number as number,a.price as price,b.number as quit_number,b.price as quit_price,a.months FROM (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =2 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) a left JOIN (
+SELECT count(a.id) as number,sum(a.sum_price) as price,FROM_UNIXTIME(a.paytime, '%m') as months FROM `ky_order` a
+left JOIN ky_cemetery b on a.cid=b.id
+where a.status!=-1 AND a.financetype =6 AND FROM_UNIXTIME(a.paytime, '%Y')=2020 GROUP BY FROM_UNIXTIME(paytime, '%Y-%m')
+) b on a.months=b.months order by months asc [ RunTime:0.001981s ]

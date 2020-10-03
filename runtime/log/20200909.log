@@ -1,0 +1,24 @@
+---------------------------------------------------------------
+[ 2020-09-09T15:48:24+08:00 ] 127.0.0.1 POST ling.io/api/v1/token/app
+[运行时间：0.105738s] [吞吐率：9.46req/s] [内存消耗：2,650.77kb] [文件加载：57]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8192]Array and string offset access syntax with curly braces is deprecated[/Users/ouryou/Documents/old/PHP/admin/thinkphp/library/think/db/Query.php:400]
+---------------------------------------------------------------
+[ 2020-09-09T15:48:25+08:00 ] 127.0.0.1 POST ling.io/api/v1/token/app
+[运行时间：0.056482s] [吞吐率：17.70req/s] [内存消耗：2,650.77kb] [文件加载：57]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8192]Array and string offset access syntax with curly braces is deprecated[/Users/ouryou/Documents/old/PHP/admin/thinkphp/library/think/db/Query.php:400]
+---------------------------------------------------------------
+[ 2020-09-09T15:48:45+08:00 ] 127.0.0.1 POST ling.io/api/v1/token/app
+[运行时间：0.058909s] [吞吐率：16.98req/s] [内存消耗：2,650.77kb] [文件加载：57]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8192]Array and string offset access syntax with curly braces is deprecated[/Users/ouryou/Documents/old/PHP/admin/thinkphp/library/think/db/Query.php:400]
+---------------------------------------------------------------
+[ 2020-09-09T21:26:47+08:00 ] 0.0.0.0 GET localhost/admin
+[运行时间：0.077867s] [吞吐率：12.84req/s] [内存消耗：2,650.74kb] [文件加载：57]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8192]Array and string offset access syntax with curly braces is deprecated[/Users/ouryou/Documents/old/PHP/admin/thinkphp/library/think/db/Query.php:400]
